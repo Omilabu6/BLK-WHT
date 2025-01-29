@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: myFont;
+}
+@font-face{
+    font-family: myFont;
+    src:url(NeueMontreal.otf)
+}
+
+video{
+       position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full width of the viewport */
+        height: 110vh; /* Full height of the viewport */
+        object-fit: cover; /* Ensures the video covers the entire area */
+        z-index: -1; /* Sends the video behind other content */
+    }
+    .firstWrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        align-content: space-between;
+        justify-content: space-between;
+        row-gap: 60vh;
+    }
+    .first{
+        position: relative;
+        width: 100vw; 
+        height: 110vh;
+    }
+    .firstWrap h1{
+        color: rgb(0, 0, 0);
+        font: bold;
+        font-size: 11em;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 30px 40px 0px;
+    }
+    .nav h2{
+        color: rgb(0, 0, 0);
+        font: bold;
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        gap:24px
+    }
+    ul li{
+        color: rgb(44, 44, 44);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .second{
+        padding: 120px 70px 50px;
+        background: var(--accent-colour, #F8F8FF);
+    }
+    .second h2{
+        color: var(--primary, #0B0B0B);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 68px; 
+        
+    }
+    .second h2 img{
+        width: 76px;
+        height: 76px;
+        flex-shrink: 0;
+        
+    }
+    .gif{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .third{
+        padding: 50px 40px;
+        position: relative;
+        background: var(--accent-colour, #F8F8FF);
+       
+    }
+    .third h1 ,h2{
+        color: var(--primary, #0B0B0B);
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        z-index: 999;
+        letter-spacing: -2px;
+        
+
+    }
+    .third h1{
+        position: absolute;
+        top:32%;
+        left: 50%;
+        transform: translateX(-20%);
+        width: 100%;
+    }
+    .third h2{
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translateX(-60%);
+    }
+    .imageWrap{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        gap: 2em;
+        padding: 2em 0em;
+    }
+    .imageWrap img{
+        width: 100%;
+        height: auto;
+    }
+    #item1{
+        width: 347px;
+        height: 474px;
+        flex-shrink: 0;
+    }
+    #item2{
+            width: 271px;
+        height: 314px;
+        flex-shrink: 0;
+    }
+    #item3{
+        max-width: 256.696px;
+        height: 202px;
+        flex-shrink: 0;
+        margin: 0em 7em;
+
+    }  
+    #item4{
+        width: 353px;
+        height: 300px;
+        flex-shrink: 0;
+        margin: 0em 5em;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 50px;
+        justify-content: end;
+        align-content: end;
+        align-items: end;
+    }
+    .imageNcontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .imageNcontent h1{
+        color: #1E1E1E;
+        font-size: 14px;
+        padding: 0.5em 0em;
+    }
+    .images img{
+        width: 100%;
+    }
+    
+    .fifth{
+        padding: 40px;
+        background: var(--accent-colour, #F8F8FF);
+    }
+    .fifth h2{
+        color: var(--primary, #0B0B0B);
+        font-size: 64px;
+        font-weight: 400;
+    }
+    .wrap{
+        color: #000;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 50px 0px;
+    }
+    .fifth h3{
+        color: #000;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 2em 0em 3em;
+        text-align: center;
+    }
+    .seventh{
+        position: relative;
+        padding: 0px 90px 10px;
+        background: var(--accent-colour, #F8F8FF);
+    }
+    .boldimg {
+        display: grid; /* Sets the element to use grid layout. */
+        grid-template-columns: minmax(250px, 1fr) minmax(400px, 70%) minmax(250px, 1fr);
+    }
+    .boldimg h1{
+        color: #000;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1px;
+        justify-content: center;
+        word-spacing: -10px;
+        z-index: 999;
+        padding: 0em 2em;
+    }
+.img3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:3em ;
+}
+.img2{
+    margin-top: 3em;
+}
+
+
+
+    footer{
+        position: relative;
+        background-color: #000;
+        color: white;
+        padding:120px 40px 20px;
+        height: 100%;
+        
+    }
+    footer h1{
+        font-size: 64px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        word-spacing: -10px;
+    }
+    footer h3{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 20px 0px 100px;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        width: 65%;
+       overflow: hidden;
+    
+    }
+    .flex h3{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .flex button{
+        height: 70px;
+        display: inline-flex;
+        padding: 19px 47px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 51px;
+        color: var(--primary, #0B0B0B);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        overflow-y: hidden;
+    }
+    .dash{
+        width: 70%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-top: -50px;
+    }
+    .dash1{
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 255, 255 ,0.1);
+    }
+    
+    .frame{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 2em 0em;
+    }
+    .littleheading li{
+        list-style-type: none;
+    }
+    .littleheading{
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        gap:1em;
+        
+    }
+    .subheading{
+        display: flex;
+    }
+    .frame h3{
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0;
+    }
+    .bigDash{
+        padding: 10em 0em 0em;
+        
+    }
+    #fadeUp{
+        animation-delay: 0.5s;
+        }
+    #fadeLeft , #fadeDownImg{
+        animation-delay: 0.5s;
+    }
+    #fadeRight{
+        animation-delay: 0.5s;
+    }
+    .fadeIn{
+        animation-delay: 0.1s;
+    }
+    .SlideUp{
+        animation-delay: 0.1s;
+        
+    }
+.bold{
+    justify-content: center;
+        align-content: center;
+        margin: auto;
+}
+.navButton{
+    display: none;
+}
+
+
+@media (max-width: 975px) {
+    .images {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive adjustment */
+    }
+    .firstWrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        align-content: space-between;
+        justify-content: space-between;
+        row-gap: 59vh;
+    }
+    .firstWrap h1{
+        font-size: 9em;
+    }
+}
+
+
+@media (max-width: 786px) {
+   
+    .firstWrap h1{
+        font-size: 8em;
+    }
+}
+
+@media (max-width:550px){
+    .firstWrap h1{
+        font-size: 4.5em;
+    }
+        
+    .bold{
+        margin: 0;
+    }
+    
+    .firstWrap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        align-content: space-between;
+        justify-content: space-between;
+        row-gap: 65vh;
+    }
+    .navButton{
+        display: block;
+
+    }
+      #Shownav{
+        background-color: rgb(255, 255, 255 ,0.3);
+        backdrop-filter: blur(10px);
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        padding: 1em;
+       
+      }
+      #Shownav li{
+        z-index: 999;
+        padding: 1.5em 0em;
+      }
+      .ComeIn{
+        animation: comein 0.5s ease-in;
+      }
+      @keyframes comein {
+        from{
+            opacity: 0;
+            transform: translateX(600px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        
+      }
+    .nav h2{
+        font-size: 2em
+    }
+    ul{
+        display: none;
+    }
+    .nav{
+        padding: 30px 20px 0px;
+    }
+    .second{
+        padding: 100px 40px 20px;
+       
+    }
+    .second h2{
+        font-size: 20px;
+        line-height: 48px; 
+        
+    }
+    .second h2 img{
+        width: 46px;
+        height: 46px;
+    }
+    .third{
+        padding: 30px 20px;
+    }
+    .third h1 ,h2{
+        font-size: 40px;
+
+    }
+    .third h1{
+        position: absolute;
+        top:32%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 0em 1em;
+    }
+    .third h2{
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 1;
+
+    }
+    #item1{
+        display: none;
+    }
+    #item2{
+            width: 271px;
+        height: 314px;
+        flex-shrink: 0;
+    }
+    #item4{
+        display: none;
+    }
+    .fifth{
+        padding: 30px;
+    }
+    .fifth h2{
+        font-size: 44px;
+    }
+    .wrap{
+        font-size: 26px;
+        padding: 40px 0px;
+    }
+    .fifth h3{
+        font-size: 30px;
+        padding: 30px 0px 45px;
+    }
+    .seventh{
+        padding: 50px 20px 10px;
+    }
+    .boldimg {
+        display: flex;
+        flex-direction: column;
+      }
+    .boldimg h1{
+        color: #000;
+        font-size: 66px;
+        letter-spacing: 1px;
+        justify-content: center;
+        word-spacing: 0px;
+        z-index: 999;
+        padding: 0em;
+        text-align: center;
+    }
+    .img3 {
+        display: none;
+    }
+    .img2{
+        margin-top: 3em;
+    } 
+     footer{
+        padding:50px 40px 20px;
+        height: 100%;
+        
+    }
+    footer h1{
+        font-size: 34px;
+        font-weight: 400;
+        word-spacing: 4px;
+    }
+    footer h3{
+        font-size: 20px;
+        padding: 20px 0px 70px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap:2em
+    
+    }
+    .flex h3{
+        font-size: 22px;
+        font-weight: 400;
+        padding: 0;
+    }
+    .flex button{
+        height: 50px;
+        display: inline-flex;
+        padding: 1px 1px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 51px;
+        color: var(--primary, #0B0B0B);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+    }
+    .dash{
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 10px;
+    }
+    
+    .frame{
+        padding: 0em 0em;
+        flex-direction: column;
+    }
+    .littleheading{
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        gap:1em;
+        flex-direction: column;
+        padding: 2em 0em;
+    }
+    .littleheading li{
+        padding: 0.1em 0em;
+        font-size: larger;
+    }
+    .subheading{
+        display: flex;
+        gap: 1em;
+        
+    }
+    .frame h3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .bigDash{
+        padding: 4em 0em 0em;
+    }
+    #img1{
+        width: 300px;
+       margin:0em 0em 0em 6em;
+    }
+}
